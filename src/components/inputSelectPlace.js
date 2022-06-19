@@ -36,6 +36,10 @@ function InputSelectPlace(props) {
       .then((res) => {
         setResult(res);
         setFetching(false);
+      })
+      .catch(() => {
+        setFetching(false);
+        window.alert("Đã xảy ra lỗi khi tìm kiếm ảnh");
       });
   };
   return (

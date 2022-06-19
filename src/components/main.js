@@ -3,6 +3,7 @@ import InputSelectPlace from "./inputSelectPlace";
 import ResultPlace from "./resultPlace";
 import classes from "./main.module.css";
 import InputUpload from "./inputUpload";
+import LinkInput from "./linkInput";
 
 function Main(props) {
   const [inputType, setInputType] = React.useState("select");
@@ -29,10 +30,21 @@ function Main(props) {
         <select onChange={handleChangeInputType}>
           <option value={"select"}>Chọn ảnh</option>
           <option value={"upload"}>Tải ảnh lên</option>
+          <option value={"link"}>Tìm kiếm bằng link</option>
         </select>
       </div>
       {inputType === "upload" && (
         <InputUpload
+          photo={photo}
+          setPhoto={setPhoto}
+          result={result}
+          setResult={setResult}
+          fetching={fetching}
+          setFetching={setFetching}
+        />
+      )}
+      {inputType === "link" && (
+        <LinkInput
           photo={photo}
           setPhoto={setPhoto}
           result={result}
