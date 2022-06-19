@@ -1,1 +1,0 @@
-web: gunicorn cbir_food_system.wsgi
