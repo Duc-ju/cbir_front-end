@@ -1,0 +1,19 @@
+.root {
+    width: 1000px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selectInput {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.selectInput select {
+    font-size: 16px;
+    border: 2px solid darkslategrey;
+    outline: none;
+    border-radius: 0.75rem;
+    padding: 8px;
+}

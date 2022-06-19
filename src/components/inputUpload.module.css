@@ -1,0 +1,92 @@
+.root {
+
+}
+
+.inputContainer {
+
+}
+
+.inputLabel {
+    display: block;
+}
+
+.inputContainer input {
+    display: none;
+}
+
+.inputButton {
+    width: 168px;
+    height: 168px;
+    border: 2px solid darkslategrey;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.inputButton:hover {
+    border: 2px solid darkcyan;
+    color: darkcyan;
+}
+
+.addIcon {
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imageContainer {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.imageContainer img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid darkslategrey;
+    border-radius: 0.75rem;
+}
+
+
+.buttonContainer {
+
+}
+
+.searchButton {
+    composes: searchButton from './inputSelectPlace.module.css';
+}
+
+.loading {
+    composes: loading from './inputSelectPlace.module.css';
+}
+
+.cancelButton {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: #ddd;
+}
+
+.cancelButton:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}

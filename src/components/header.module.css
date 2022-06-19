@@ -1,0 +1,12 @@
+.root {
+    background-color: darkslategrey;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 25px
+}

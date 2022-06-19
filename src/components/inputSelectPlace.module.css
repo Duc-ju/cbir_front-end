@@ -1,0 +1,108 @@
+
+.imageInputList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    column-gap: 16px;
+    overflow-x: auto;
+}
+
+.imageInputList ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.imageInputList ul::-webkit-scrollbar {
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+.imageInputList ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.86, darkslategrey));
+}
+
+.imageInputItem {
+    padding: 2px;
+    cursor: pointer;
+}
+
+.imageInputItem.selected,
+.imageInputItem:hover {
+    padding: 0;
+}
+
+.imageInputItem img {
+    width: 200px;
+    height: 200px;
+}
+
+.imageInputItem.selected img,
+.imageInputItem:hover img {
+    border: 2px solid darkslategrey;
+}
+
+.buttonContainer {
+}
+
+.searchButton {
+    font-size: 18px;
+    color: white;
+    background-color: crimson;
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 6px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.searchButton.loading:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 5px solid white;
+    border-top-color: darkslategrey;
+    animation: loading 0.5s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.searchButton:hover {
+    background-color: brown;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.selectedImage {
+    border: 2px solid crimson;
+    width: 150px;
+    height: 150px;
+}
+
+.selectedImage img {
+    width: 150px;
+    height: 150px;
+}
+
+

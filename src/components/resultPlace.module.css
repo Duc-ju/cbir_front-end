@@ -1,0 +1,46 @@
+.root {
+
+}
+
+.title {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    margin-bottom: 0;
+}
+
+.resultContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.25%;
+    row-gap: 16px;
+    list-style-type: none;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border: 2px solid crimson;
+    margin-top: 0;
+    padding: 16px;
+}
+
+.resultItem {
+    width: 19%;
+}
+
+.resultItem img {
+    width: 100%;
+    height: auto;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.resetButton {
+    composes: searchButton from 'inputSelectPlace.module.css';
+}
